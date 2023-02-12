@@ -1,0 +1,95 @@
+:root{
+    --round-edge: 5px;
+    --top-card-color:mediumseagreen;
+    --btn-color: rgb(24, 223, 87);
+    --support-color: rgb(176, 176, 176);
+    --m-top: 30px;
+}
+
+.title h1 {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.title h1:hover {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.avatar img {
+    width: 25%;
+    margin: var(--m-top) auto 5px auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.avatar img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.38);
+}
+
+.card {
+    margin: auto auto;
+    border-radius:var(--round-edge);
+    text-align: center;
+    width: 55%;
+    min-height: 85%;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.highlight {
+    color: white;
+}
+
+.top {
+    background-image: linear-gradient(to top, rgb(45, 135, 85), var(--top-card-color));
+    border-radius:var(--round-edge) var(--round-edge) 0 0;
+    padding-bottom:15px;
+}
+
+.top:hover {
+    cursor:default;
+}
+
+.top p {
+    font-size: small;
+    margin: 1px auto 1px auto;
+}
+
+.bottom {
+    border-radius: 0 0 var(--round-edge) var(--round-edge);
+}
+
+div.bottom div.description {
+    text-align: left;
+    margin: 15px var(--m-top) var(--m-top) var(--m-top);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: var(--m-top) 60px;
+}
+
+.support {
+    font-size: small;
+    color: var(--support-color);
+}
+
+.social-card {
+    position:static;
+}
+
+.btns {
+    margin: var(--m-top) auto;
+}
+
+.btn {
+    width: 120px;
+    background-color: var(--btn-color);
+    border-radius: var(--round-edge);
+}
+
+.heavy {
+    font-weight: bold;
+}

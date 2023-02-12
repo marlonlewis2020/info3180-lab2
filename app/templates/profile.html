@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block css %} <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}"> {% endblock %}
+
+{% block main %}
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="top highlight">
+                <div class="avatar">
+                    <a href="https://www.flaticon.com/free-icons/avatar" target="_blank">
+                        <img src="{{url_for('static', filename=profile.avatar)}}" alt="profile pic" title="Avatar icon by Flaticon">
+                    </a>
+                </div>
+                <div class="title">
+                    <h1>{{profile.name}}</h1>
+                </div>
+                <div class="info">
+                    <p>{{profile.handle}}</p>
+                    <p>{{profile.location}}</p>
+                    <p>{{profile.history}}</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="description support">
+                    I am a passionate, creative and talented software developer who loves website/webapp design and development.
+                    Feel free to contact me if you're interested in collaborating on any exciting and meaningful project.
+                </div>
+                <div class="socials">
+                    {%for social in socials%}
+                        <div class="social-card">
+                            <div class="numbers heavy">{{social.number}}</div>
+                            <div class="types support">{{social.type}}</div>
+                        </div>
+                    {% endfor%}
+                </div>
+                <div class="btns">
+                    <button class="btn highlight heavy">Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

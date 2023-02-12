@@ -29,6 +29,7 @@
     margin: auto auto;
     border-radius:var(--round-edge);
     text-align: center;
+    min-width: 300px;
     width: 55%;
     min-height: 85%;
     display:flex;
@@ -77,7 +78,7 @@ div.bottom div.description {
 }
 
 .social-card {
-    position:static;
+    min-width:100px;
 }
 
 .btns {
